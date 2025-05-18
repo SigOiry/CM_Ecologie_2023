@@ -1,0 +1,1039 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<script src="CM2023_files/libs/clipboard/clipboard.min.js"></script>
+<script src="CM2023_files/libs/quarto-html/tabby.min.js"></script>
+<script src="CM2023_files/libs/quarto-html/popper.min.js"></script>
+<script src="CM2023_files/libs/quarto-html/tippy.umd.min.js"></script>
+<link href="CM2023_files/libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="CM2023_files/libs/quarto-html/light-border.css" rel="stylesheet">
+<link href="CM2023_files/libs/quarto-html/quarto-syntax-highlighting-e1a5c8363afafaef2c763b6775fbf3ca.css" rel="stylesheet" id="quarto-text-highlighting-styles"><meta charset="utf-8">
+  <meta name="generator" content="quarto-1.7.31">
+
+  <title>cm2023</title>
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+  <link rel="stylesheet" href="CM2023_files/libs/revealjs/dist/reset.css">
+  <link rel="stylesheet" href="CM2023_files/libs/revealjs/dist/reveal.css">
+  <style>
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: auto; overflow-x: auto;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    ul.task-list{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+      vertical-align: middle;
+    }
+  </style>
+  <link rel="stylesheet" href="CM2023_files/libs/revealjs/dist/theme/quarto-0b13b69e39596f7601e1484004f76a79.css">
+  <link href="CM2023_files/libs/revealjs/plugin/quarto-line-highlight/line-highlight.css" rel="stylesheet">
+  <link href="CM2023_files/libs/revealjs/plugin/reveal-menu/menu.css" rel="stylesheet">
+  <link href="CM2023_files/libs/revealjs/plugin/reveal-menu/quarto-menu.css" rel="stylesheet">
+  <link href="CM2023_files/libs/revealjs/plugin/quarto-support/footer.css" rel="stylesheet">
+  <style type="text/css">
+    .reveal div.sourceCode {
+      margin: 0;
+      overflow: auto;
+    }
+    .reveal div.hanging-indent {
+      margin-left: 1em;
+      text-indent: -1em;
+    }
+    .reveal .slide:not(.center) {
+      height: 100%;
+    }
+    .reveal .slide.scrollable {
+      overflow-y: auto;
+    }
+    .reveal .footnotes {
+      height: 100%;
+      overflow-y: auto;
+    }
+    .reveal .slide .absolute {
+      position: absolute;
+      display: block;
+    }
+    .reveal .footnotes ol {
+      counter-reset: ol;
+      list-style-type: none; 
+      margin-left: 0;
+    }
+    .reveal .footnotes ol li:before {
+      counter-increment: ol;
+      content: counter(ol) ". "; 
+    }
+    .reveal .footnotes ol li > p:first-child {
+      display: inline-block;
+    }
+    .reveal .slide ul,
+    .reveal .slide ol {
+      margin-bottom: 0.5em;
+    }
+    .reveal .slide ul li,
+    .reveal .slide ol li {
+      margin-top: 0.4em;
+      margin-bottom: 0.2em;
+    }
+    .reveal .slide ul[role="tablist"] li {
+      margin-bottom: 0;
+    }
+    .reveal .slide ul li > *:first-child,
+    .reveal .slide ol li > *:first-child {
+      margin-block-start: 0;
+    }
+    .reveal .slide ul li > *:last-child,
+    .reveal .slide ol li > *:last-child {
+      margin-block-end: 0;
+    }
+    .reveal .slide .columns:nth-child(3) {
+      margin-block-start: 0.8em;
+    }
+    .reveal blockquote {
+      box-shadow: none;
+    }
+    .reveal .tippy-content>* {
+      margin-top: 0.2em;
+      margin-bottom: 0.7em;
+    }
+    .reveal .tippy-content>*:last-child {
+      margin-bottom: 0.2em;
+    }
+    .reveal .slide > img.stretch.quarto-figure-center,
+    .reveal .slide > img.r-stretch.quarto-figure-center {
+      display: block;
+      margin-left: auto;
+      margin-right: auto; 
+    }
+    .reveal .slide > img.stretch.quarto-figure-left,
+    .reveal .slide > img.r-stretch.quarto-figure-left  {
+      display: block;
+      margin-left: 0;
+      margin-right: auto; 
+    }
+    .reveal .slide > img.stretch.quarto-figure-right,
+    .reveal .slide > img.r-stretch.quarto-figure-right  {
+      display: block;
+      margin-left: auto;
+      margin-right: 0; 
+    }
+  </style>
+</head>
+<body class="quarto-light">
+  <div class="reveal">
+    <div class="slides">
+
+
+<section id="section" class="slide level2">
+<h2></h2>
+<div class="gradient_box" style="position: absolute; left: -500px; top: 50px; height:110px; width:  3400px; padding: 20px;text-align: center">
+<p><span style="font-size: 90px; font-weight: bold; line-height: 1em; margin: 0px; text-align: justify-all;">Stage d’écologie quantitative</span></p>
+</div>
+<div class="gradient_box" style="position: absolute; left: 450px; top: 250px; height:110px; width: 1500px; padding: 20px;text-align: center">
+<p><span style="font-size: 60px; font-weight: bold; line-height: 1em; margin: 0px; text-align: justify-all;">Introduction aux SIG</span></p>
+</div>
+<div class="absolute" style="left: 10.4%; bottom: 40%; ">
+<p><img data-src="Images/qgis-logo.png" height="200"></p>
+</div>
+<div class="absolute" style="bottom: 40%; right: 10.4%; ">
+<p><img data-src="Images/ArcGIS_logo.png" height="200"></p>
+</div>
+<div class="absolute" style="bottom: 4%; right: 15%; ">
+<p><img data-src="Images/Drone_title.jpg" height="400"></p>
+</div>
+<div class="gradient_box" style="position: absolute; left: 825px; top: 440px; height: 145px; width: 750px; padding: 0px; padding-left: 10px;text-align: center">
+<p><span style="font-size: 45px; font-weight: bold;">Simon Oiry</span></p>
+<p><span style="font-size: 40px; font-weight: bold;">Doctorant</span></p>
+</div>
+<div class="gradient_box" style="position: absolute; left: 700px; top: 675px; height: 70px; width: 1000px; padding: 0px; padding-left: 10px;text-align: center">
+<p><span style="font-size: 35px; font-weight: bold;">Email : simon.oiry@univ-nantes.fr</span></p>
+</div>
+<div class="absolute" style="left: 25%; bottom: 4%; ">
+<p><img data-src="Images/Sentinel2.png" height="400"></p>
+</div>
+</section>
+<section id="les-sig-quest-ce-que-cela-veut-dire" class="slide level2" style="font-size: 60px;">
+<h2>Les SIG, qu’est ce que cela veut dire ?</h2>
+<div class="fragment">
+<div class="absolute" style="left: 10.4%; ">
+<p>SIG = Systèmes d’information géographique</p>
+</div>
+</div>
+<div class="fragment">
+<div class="absolute" style="top: 50%; left: 50%; ">
+<p><span style="font-size: 80px;"><strong>SIG</strong></span></p>
+</div>
+<div class="absolute" style="top: 16%; left: 47%; ">
+<p><img data-src="Images/computer.png" height="200"></p>
+</div>
+<div class="absolute" style="top: 31%; left: 46%; ">
+<p>Le Hardware</p>
+</div>
+</div>
+<div class="fragment">
+<div class="absolute" style="top: 37%; left: 78%; ">
+<p><img data-src="Images/data.png" height="200"></p>
+</div>
+<div class="absolute" style="top: 52%; left: 76%; ">
+<p>Les données</p>
+</div>
+</div>
+<div class="fragment">
+<div class="absolute" style="top: 70%; left: 63%; ">
+<p><img data-src="Images/personnes.png" height="200"></p>
+</div>
+<div class="absolute" style="top: 85%; left: 61%; ">
+<p>Les personnes</p>
+</div>
+</div>
+<div class="fragment">
+<div class="absolute" style="top: 70%; left: 33%; ">
+<p><img data-src="Images/internet.png" height="200"></p>
+</div>
+<div class="absolute" style="top: 85%; left: 33%; ">
+<p>Internet</p>
+</div>
+</div>
+<div class="fragment">
+<div class="absolute fragment fade-out" style="top: 37%; left: 20%; ">
+<p><img data-src="Images/soft.png" height="170"></p>
+</div>
+<div class="absolute fragment fade-in-then-out" style="top: 37%; left: 21%; ">
+<p><img data-src="Images/arcgis.png" height="150"></p>
+</div>
+<div class="absolute fragment fade-in" style="top: 37%; left: 13%; ">
+<p><img data-src="Images/qgis.png" height="150"></p>
+</div>
+<div class="absolute" style="top: 52%; left: 18%; ">
+<p>Les logiciels</p>
+</div>
+</div>
+</section>
+<section id="les-sig-à-quoi-ça-sert" class="slide level2" style="font-size: 60px;">
+<h2>Les SIG, à quoi ça sert ?</h2>
+<div class="fragment fade-in absolute" data-fragment-index="1" style="left: 20%; bottom: 0%; ">
+<p><img data-src="Images/carte1.png" height="1200"></p>
+</div>
+<div class="fragment fade-in" data-fragment-index="1" style="position: absolute; left: -50px; top: 600px; height:110px; width:  500px; padding: 20px;text-align: center">
+<p><span style="font-size: 90px; line-height: 1em; margin: 0px; text-align: justify-all;">Faire des cartes</span></p>
+</div>
+<div class="redbox absolute fragment fade-in-then-out" data-fragment-index="2" style="top: 15%; left: 39.5%; width: 95px; height: 48px; ">
+
+</div>
+<div class="redbox absolute fragment fade-in-then-out" data-fragment-index="2" style="top: 15%; right: 27.5%; width: 95px; height: 48px; ">
+
+</div>
+<div class="redbox absolute fragment fade-in-then-out" data-fragment-index="2" style="top: 78.5%; right: 17%; width: 110px; height: 50px; ">
+
+</div>
+<div class="redbox absolute fragment fade-in-then-out" data-fragment-index="3" style="top: 71%; left: 48.5%; width: 250px; height: 330px; ">
+
+</div>
+<div class="redbox absolute fragment fade-in-then-out" data-fragment-index="4" style="top: 90%; left: 59.5%; width: 220px; height: 75px; ">
+
+</div>
+<div class="fragment fade-in" data-fragment-index="5" style="position: absolute; left: 1830px; top: 600px; height:110px; width:  500px; padding: 20px;text-align: center">
+<p><span style="font-size: 90px; line-height: 1em; margin: 0px; text-align: justify-all;">Traiter des données carto</span></p>
+</div>
+</section>
+<section id="types-de-logiciels-sig-propiétaire-vs-open-sources" class="slide level2" style="font-size: 60px;">
+<h2>Types de logiciels SIG (propiétaire vs open sources)</h2>
+<div style="position: absolute; left: 250px; top: 100px; height:110px; width:  500px; padding: 20px;text-align: center">
+<p><span style="font-size: 90px; line-height: 1em; margin: 0px; text-align: justify-all;">Propriétaire</span></p>
+</div>
+<div style="position: absolute; right: 380px; top: 100px; height:110px; width:  500px; padding: 20px;text-align: center">
+<p><span style="font-size: 90px; line-height: 1em; margin: 0px; text-align: justify-all;">Open Source</span></p>
+</div>
+<div class="absolute" style="top: 15%; left: 0%; ">
+<p><img data-src="Images/arcgis.png" height="250"></p>
+</div>
+<div style="position: absolute; left: 350px; top: 300px; height:110px; width:  500px; padding: 20px;text-align: center">
+<p><span style="font-size: 70px; line-height: 1em; margin: 0px; text-align: justify-all;">arcGIS (ESRI)</span></p>
+</div>
+<div class="absolute" style="top: 45%; left: -3%; ">
+<p><img data-src="Images/mapinfo.png" height="100"></p>
+</div>
+<div style="position: absolute; left: 320px; top: 600px; height:110px; width:  900px; padding: 20px;text-align: center">
+<p><span style="font-size: 70px; line-height: 1em; margin: 0px; text-align: justify-all;">MapInfo (Pitney Bowes)</span></p>
+</div>
+<div class="absolute" style="top: 65%; left: 0%; ">
+<p><img data-src="Images/IDRISI.jpeg" height="100"></p>
+</div>
+<div style="position: absolute; left: 350px; top: 900px; height:110px; width:  700px; padding: 20px;text-align: center">
+<p><span style="font-size: 70px; line-height: 1em; margin: 0px; text-align: justify-all;">IDRISI (Clark Labs)</span></p>
+</div>
+<div class="absolute" style="top: 22%; left: 52%; ">
+<p><img data-src="Images/qgis.png" height="100"></p>
+</div>
+<div style="position: absolute; left: 1650px; top: 300px; height:110px; width:  700px; padding: 20px;text-align: center">
+<p><span style="font-size: 70px; line-height: 1em; margin: 0px; text-align: justify-all;">Qgis (www.qgis.org)</span></p>
+</div>
+<div class="absolute" style="top: 40%; left: 52%; ">
+<p><img data-src="Images/SAGA.png" height="250"></p>
+</div>
+<div style="position: absolute; left: 1550px; top: 900px; height:110px; width:  800px; padding: 20px;text-align: center">
+<p><span style="font-size: 70px; line-height: 1em; margin: 0px; text-align: justify-all;">Grass (grass.osgeo.org)</span></p>
+</div>
+<div class="absolute" style="top: 65%; left: 54%; ">
+<p><img data-src="Images/grass.png" height="250"></p>
+</div>
+<div style="position: absolute; left: 1550px; top: 600px; height:110px; width:  800px; padding: 20px;text-align: center">
+<p><span style="font-size: 70px; line-height: 1em; margin: 0px; text-align: justify-all;">Saga (www.saga-gis.org)</span></p>
+</div>
+<div class="fragment fade-in" data-fragment-index="1" style="position: absolute; left: 200px; top: 1200px; height:110px; width:  2000px; padding: 20px;text-align: center">
+<p><span style="font-size: 70px; line-height: 1em; margin: 0px; text-align: justify-all;">Et plein d’autes… (eCognition, SNAP, ENVI…)</span></p>
+</div>
+<div class="absolute" style="top: 5%; left: 48%; ">
+<p><img data-src="Images/line.png" height="1100"></p>
+</div>
+</section>
+<section id="quest-ce-que-qgis" class="slide level2" data-auto-animate="true" data-auto-animate-unmatched="true" style="font-size: 60px;">
+<h2 data-id="quarto-animate-title">Qu’est ce que Qgis ?</h2>
+<div class="absolute" style="top: 15%; left: 0%; ">
+<p><img data-src="Images/qgis.png" height="200"></p>
+</div>
+<div style="position: absolute; left: 800px; top: 200px; height:110px; width:  1800px; padding: 20px">
+<p>QGIS est un Système d’Information Géographique <strong>(SIG)</strong></p>
+</div>
+<div style="position: absolute; left: 800px; top: 350px; height:110px; width:  1800px; padding: 20px">
+<p>C’est un projet de <strong>l’Open Source Geospatial Foundation</strong> (OSGeo)</p>
+</div>
+<div style="position: absolute; left: 800px; top: 500px; height:110px; width:  1800px; padding: 20px">
+<p>La dernière version <span class="fragment highlight-red">stable</span> est Qgis 3.40.6 (Bratislava)</p>
+</div>
+<div class="fragment fade-in" style="position: absolute; left: 1544px; top: 580px; height:110px; width:  1800px; padding: 20px">
+<p>Qgis 3.42.2 (Münster, 18 avril 2025)</p>
+</div>
+<div class="fragment">
+<div style="font-size: 70px; position: absolute; top: 600px; height:110px; width:  1800px; padding: 20px">
+<p><strong>Pourquoi Qgis ?</strong></p>
+</div>
+<div style="position: absolute; top: 700px; left: 100px; width:  1800px; margin: 0px;">
+<ul>
+<li class="fragment">Gratuit !</li>
+<li class="fragment">Supporte de nombreux formats de vecteurs, rasters et de bases de données.</li>
+<li class="fragment">Disponible pour Windows, MacOS, Linux, Android.</li>
+<li class="fragment">Vaste communauté d’utilisateurs.</li>
+<li class="fragment">Grande capacité d’extension.</li>
+</ul>
+</div>
+<div style="position: absolute; top: 700px; color: red; left: 100px; width:  1800px; margin: 0px;">
+<ul>
+<li class="fragment">Gratuit !</li>
+</ul>
+</div>
+</div>
+<div class="fragment">
+<div class="absolute" data-id="PYTHON" style="top: 75%; left: 80%; ">
+<p><img data-src="Images/Python.png"></p>
+</div>
+</div>
+</section>
+<section id="améliorer-qgis-avec-des-modules-et-python" class="slide level2" data-auto-animate="true" style="font-size: 60px;">
+<h2 data-id="quarto-animate-title">Améliorer QGIS avec des modules et Python</h2>
+<div class="absolute" data-id="PYTHON" style="top: 15%; left: 0%; ">
+<p><img data-src="Images/Python.png" height="300"></p>
+</div>
+<div class="fragment">
+<div style="position: absolute; left: 700px; top: 200px; height:110px; width:  1800px; padding: 20px">
+<p>Qgis est déjà très complet de base, mais l’est encore plus grâce à la communauté</p>
+</div>
+<div class="absolute" style="top: 30%; left: 50%; ">
+<p><img data-src="Images/plugins.png" height="700"></p>
+</div>
+<div style="position: absolute; left: 1200px; top: 1100px; height:110px; width:  1800px; padding: 20px">
+<ul>
+<li>Mai 2025 : 2446 plugins disponibles</li>
+</ul>
+</div>
+</div>
+<div class="fragment">
+<div style="position: absolute; left: 0px; top: 600px; height:110px; width:  1000px; padding: 20px">
+<p><strong>De nouvelles fonctionnalités</strong> peuvent être développées par l’usager en utilisant le langage python (http://plugins.qgis.org/plugins/).</p>
+</div>
+</div>
+</section>
+<section id="télécharger-qgis" class="slide level2" data-auto-animate="true" style="font-size: 60px;">
+<h2 data-id="quarto-animate-title">Télécharger Qgis !</h2>
+<div class="absolute" style="bottom: 0%; right: 0%; ">
+<p><img data-src="Images/qgis-dl.png" height="1200"></p>
+</div>
+<div class="absolute" style="left: 0%; bottom: 10%; ">
+<p><img data-src="Images/qr-code.png" height="800"></p>
+</div>
+<div class="fragment">
+<!-- ::: {style="position: absolute; left: 300px; top: 1200px; height:110px; width:  600px; padding: 20px"} -->
+<!-- Tp écologie : avril-mai  -->
+<!-- ::: -->
+<!-- ::: {style="position: absolute; left: 1400px; top: 1200px; height:110px; width:  800px; padding: 20px"} -->
+<!-- Sortie de terrain: mi-mai -->
+<!-- ::: -->
+</div>
+</section>
+<section id="que-peut-on-mettre-dans-un-sig" class="slide level2" data-auto-animate="true" style="font-size: 60px;">
+<h2 data-id="quarto-animate-title">Que peut-on mettre dans un SIG ?</h2>
+<div class="fragment fade-in" data-fragment-index="1" style="position: absolute; left: 700px; top: 100px; height:110px; width:  1000px; padding: 20px">
+<p>Tout ce qui a une position dans l’espace</p>
+</div>
+<div class="absolute fragment fade-in-then-out" data-fragment-index="1" style="top: 20%; left: 30%; ">
+<p><img data-src="Images/fac/map1.png" height="1000"></p>
+</div>
+<div class="absolute fragment fade-in-then-out" data-fragment-index="2" style="top: 20%; left: 30%; ">
+<p><img data-src="Images/fac/map2.png" height="1000"></p>
+</div>
+<div class="fragment fade-in-then-out" data-fragment-index="2" style="position: absolute; left: 0px; top: 500px; height:110px; width:  1000px; padding: 20px">
+<ul>
+<li>Position des <strong>arbres</strong></li>
+</ul>
+</div>
+<div class="absolute fragment fade-in-then-out" data-fragment-index="3" style="top: 20%; left: 30%; ">
+<p><img data-src="Images/fac/map3.png" height="1000"></p>
+</div>
+<div class="fragment fade-in-then-out" data-fragment-index="3" style="position: absolute; left: 0px; top: 500px; height:110px; width:  1000px; padding: 20px">
+<ul>
+<li>Position des <span style="color: green;"><strong>arbres</strong></span></li>
+<li>Position des <strong>batiments</strong></li>
+</ul>
+</div>
+<div class="absolute fragment fade-in-then-out" data-fragment-index="4" style="top: 20%; left: 30%; ">
+<p><img data-src="Images/fac/map4.png" height="1000"></p>
+</div>
+<div class="fragment fade-in-then-out" data-fragment-index="4" style="position: absolute; left: 0px; top: 500px; height:110px; width:  1000px; padding: 20px">
+<ul>
+<li>Position des <span style="color: green;"><strong>arbres</strong></span></li>
+<li>Position des <span style="color: red;"><strong>batiments</strong></span></li>
+<li>Tracé des <strong>routes</strong></li>
+</ul>
+</div>
+<div class="absolute fragment fade-in-then-out" data-fragment-index="5" style="top: 20%; left: 30%; ">
+<p><img data-src="Images/fac/map5.png" height="1000"></p>
+</div>
+<div class="fragment fade-in-then-out" data-fragment-index="5" style="position: absolute; left: 0px; top: 500px; height:110px; width:  1000px; padding: 20px">
+<ul>
+<li>Position des <span style="color: green;"><strong>arbres</strong></span></li>
+<li>Position des <span style="color: red;"><strong>batiments</strong></span></li>
+<li>Tracé des <span style="color: #004b8b;"><strong>routes</strong></span></li>
+<li>Plan d’<span style="color: blue;"><strong>eau</strong></span></li>
+</ul>
+</div>
+</section>
+<section id="les-couches-sig" class="slide level2" data-auto-animate="true" style="font-size: 60px;">
+<h2 data-id="quarto-animate-title">Les couches SIG</h2>
+<div style="position: absolute; left: 0px; top: 200px; height:110px; width: 2400px; padding: 20px">
+<p>Toutes <span style="color: red;">les routes</span> sont regroupées dans la même couche, tout les <span style="color: black;">batiments</span> dans une autre, les <span style="color: #52AFF9;">plans d’eau</span> dans une autre, ect…</p>
+</div>
+<div class="absolute" style="top: 30%; left: 17%; ">
+<p><img data-src="Images/couches.png" height="400"></p>
+</div>
+<div class="fragment">
+<div class="absolute" style="top: 65%; left: 41.25%; ">
+<p><img data-src="Images/map_couche.png" height="400"></p>
+</div>
+<div style="position: absolute; left: 50px; top: 950px; height:110px; width: 800px; padding: 20px">
+<p>La superposition de plusieurs <strong>couches</strong> forme une <strong>carte</strong>.</p>
+</div>
+</div>
+</section>
+<section id="les-couches-sig-1" class="slide level2" data-auto-animate="true" data-auto-animate-unmatched="true" style="font-size: 60px;">
+<h2 data-id="quarto-animate-title">Les couches SIG</h2>
+<div class="absolute" data-id="map_qgis" style="top: 10%; left: 10%; ">
+<p><img data-src="Images/fac/map5.png" height="1100"></p>
+</div>
+<div class="absolute" style="top: 35%; left: 60%; ">
+<p><img data-src="Images/qgis_printscreen.png" height="400"></p>
+</div>
+</section>
+<section id="deux-grandes-familles-de-couches" class="slide level2" data-auto-animate="true" data-auto-animate-unmatched="true" style="font-size: 60px;">
+<h2 data-id="quarto-animate-title">Deux grandes familles de couches</h2>
+<h3 id="les-vecteurs">Les vecteurs</h3>
+<div class="fragment fade-out absolute" data-fragment-index="4" data-id="map_qgis" style="top: 10%; left: 50%; ">
+<p><img data-src="Images/fac/map6.png" height="1100"></p>
+</div>
+<div class="fragment fade-in-then-out" data-fragment-index="1" style="position: absolute; left: 150px; top: 300px; height:110px; width: 800px; padding: 20px">
+<ul>
+<li>Des <span style="color: green">points</span></li>
+</ul>
+</div>
+<div class="fragment fade-in-then-out" data-fragment-index="2" style="position: absolute; left: 150px; top: 300px; height:110px; width: 800px; padding: 20px">
+<ul>
+<li>Des <span style="color: green">points</span></li>
+<li>Des <span style="color: red">polygons</span></li>
+</ul>
+</div>
+<div class="fragment fade-in-then-out" data-fragment-index="3" style="position: absolute; left: 150px; top: 300px; height:110px; width: 800px; padding: 20px">
+<ul>
+<li>Des <span style="color: green">points</span></li>
+<li>Des <span style="color: red">polygons</span></li>
+<li>Des <span style="color: #004b8b">lignes</span></li>
+</ul>
+</div>
+<div class="fragment fade-in absolute" data-fragment-index="4" data-id="map_qgis1" style="top: 10%; left: 50%; ">
+<p><img data-src="Images/fac/map7.png" height="1100"></p>
+</div>
+<div class="fragment fade-in absolute" data-fragment-index="4" data-id="map_qgis" style="top: 22%; left: 7%; ">
+<p><img data-src="Images/printscreen_attribut.png" height="600"></p>
+</div>
+<div class="fragment fade-in" data-fragment-index="4" style="position: absolute; left: 300px; top: 200px; height:110px; width: 800px; padding: 20px">
+<p>La table attributaire</p>
+</div>
+<div class="columns fragment fade-in" data-fragment-index="4" style="position: absolute; left: 50px; top: 900px; height:110px; width: 1400px; padding: 20px">
+<div class="column" style="width:40%;">
+<ul>
+<li class="fragment">Texte</li>
+<li class="fragment">Dates</li>
+<li class="fragment">Valeurs numériques</li>
+</ul>
+</div><div class="column" style="width:60%;">
+<ul>
+<li class="fragment">Liens hypertextes</li>
+<li class="fragment">…</li>
+</ul>
+</div></div>
+</section>
+<section id="deux-grandes-familles-de-couches-1" class="slide level2" data-auto-animate="true" data-auto-animate-unmatched="true" style="font-size: 60px;">
+<h2 data-id="quarto-animate-title">Deux grandes familles de couches</h2>
+<h3 id="les-vecteurs-1">Les Vecteurs</h3>
+<div class="fragment fade-out absolute" data-fragment-index="1" style="top: 10%; left: 50%; ">
+<p><img data-src="Images/fac/map8.png" height="1100"></p>
+</div>
+<div class="fragment fade-out absolute" data-fragment-index="1" style="top: 35%; left: 20%; ">
+<p><img data-src="Images/legend_tree.png" height="300"></p>
+</div>
+<div class="fragment fade-in" data-fragment-index="1" style="position: absolute; left: 20px; top: 200px; height:110px; width: 2200px; padding: 20px">
+<p>Résumé de certaines des actions les plus importantes qui peuvent être réalisées dans la table attributaire :</p>
+</div>
+<div class="fragment fade-in-then-out" data-fragment-index="3" style="position: absolute; left: 150px; top: 350px; height:110px; width: 2000px; padding: 20px">
+<ul>
+<li><strong>Stocker</strong> des <strong>informations</strong> de différentes natures (nombres (entiers, décimaux), texte, dates)</li>
+</ul>
+</div>
+<div class="fragment fade-in" data-fragment-index="4" style="position: absolute; left: 150px; top: 350px; height:110px; width: 2000px; padding: 20px">
+<ul>
+<li><strong>Stocker</strong> des <strong>informations</strong> de différentes natures (nombres (entiers, décimaux), texte, dates)</li>
+<li><strong>Cartographier</strong> ces informations.</li>
+</ul>
+</div>
+<div class="fragment fade-in" data-fragment-index="5" style="position: absolute; left: 150px; top: 350px; height:110px; width: 2000px; padding: 20px">
+<ul>
+<li><strong>Stocker</strong> des <strong>informations</strong> de différentes natures (nombres (entiers, décimaux), texte, dates)</li>
+<li><strong>Cartographier</strong> ces informations.</li>
+<li><strong>Sélectionner</strong> dans un champ les valeurs qui doivent être cartographier</li>
+</ul>
+</div>
+<div class="fragment fade-in" data-fragment-index="6" style="position: absolute; left: 150px; top: 350px; height:110px; width: 2000px; padding: 20px">
+<ul>
+<li><strong>Stocker</strong> des <strong>informations</strong> de différentes natures (nombres (entiers, décimaux), texte, dates)</li>
+<li><strong>Cartographier</strong> ces informations.</li>
+<li><strong>Sélectionner</strong> dans un champ les valeurs qui doivent être cartographier</li>
+<li>Placer sur une carte différentes <strong>valeurs</strong> d’un attribut en utilisant une <strong>symbologie</strong> différente (couleurs, symboles).</li>
+</ul>
+</div>
+<div class="fragment fade-in" data-fragment-index="7" style="position: absolute; left: 150px; top: 350px; height:110px; width: 2000px; padding: 20px">
+<ul>
+<li><strong>Stocker</strong> des <strong>informations</strong> de différentes natures (nombres (entiers, décimaux), texte, dates)</li>
+<li><strong>Cartographier</strong> ces informations.</li>
+<li><strong>Sélectionner</strong> dans un champ les valeurs qui doivent être cartographier</li>
+<li>Placer sur une carte différentes <strong>valeurs</strong> d’un attribut en utilisant une <strong>symbologie</strong> différente (couleurs, symboles).</li>
+<li><strong>Réaliser des calculs</strong> entre les différents attributs et crée une nouvelle information.</li>
+</ul>
+</div>
+<div class="fragment fade-in" data-fragment-index="8" style="position: absolute; left: 400px; top: 1100px; height:110px; width: 2000px; padding: 20px; color: red; font-size: 90px">
+<p>La table d’attributs des couches vecteurs</p>
+</div>
+</section>
+<section id="deux-grandes-familles-de-couches-2" class="slide level2" data-auto-animate="true" data-auto-animate-unmatched="true" style="font-size: 60px;">
+<h2 data-id="quarto-animate-title">Deux grandes familles de couches</h2>
+<h3 id="les-vecteurs-2">Les Vecteurs</h3>
+<div class="fragment fade-in" data-fragment-index="1" style="position: absolute; left: 20px; top: 200px; height:110px; width: 2400px; padding: 20px">
+<p>Le « <em>shapefile</em> » est un format de fichier développé par ESRI pour le logiciel ArcView (1990s) qui maintenant est utilisé par un grand nombre de logiciels (libres et propriétaires).</p>
+</div>
+<div class="fragment fade-in" data-fragment-index="2" style="position: absolute; left: 20px; top: 450px; height:110px; width: 2000px; padding: 20px">
+<p>Il est toujours composé d’au moins 3 fichiers:</p>
+</div>
+<div class="fragment fade-in-then-out" data-fragment-index="3" style="position: absolute; left: 150px; top: 550px; height:110px; width: 2000px; padding: 20px">
+<ul>
+<li><strong>.shp</strong> : géométrie des objets (points, lignes, polygons)</li>
+</ul>
+</div>
+<div class="fragment fade-in-then-out" data-fragment-index="4" style="position: absolute; left: 150px; top: 550px; height:110px; width: 2000px; padding: 20px">
+<ul>
+<li><strong>.shp</strong> : géométrie des objets (points, lignes, polygons)</li>
+<li><strong>.shx</strong> : l’index de la géométrie</li>
+</ul>
+</div>
+<div class="fragment fade-in-then-out" data-fragment-index="5" style="position: absolute; left: 150px; top: 550px; height:110px; width: 2000px; padding: 20px">
+<ul>
+<li><strong>.shp</strong> : géométrie des objets (points, lignes, polygons)</li>
+<li><strong>.shx</strong> : l’index de la géométrie</li>
+<li><strong>.dbf</strong> : La table d’attribut</li>
+</ul>
+</div>
+<div class="fragment fade-in-then-out" data-fragment-index="6" style="position: absolute; left: 150px; top: 550px; height:110px; width: 2000px; padding: 20px">
+<ul>
+<li><strong>.shp</strong> : géométrie des objets (points, lignes, polygons)</li>
+<li><strong>.shx</strong> : l’index de la géométrie</li>
+<li><strong>.dbf</strong> : La table d’attribut</li>
+<li>…</li>
+</ul>
+</div>
+<div class="fragment fade-in absolute" data-fragment-index="6" style="top: 60%; left: 50%; ">
+<p><img data-src="Images/ext_shp.png" height="300"></p>
+</div>
+</section>
+<section id="deux-grandes-familles-de-couches-3" class="slide level2" data-auto-animate="true" data-auto-animate-unmatched="true" style="font-size: 60px;">
+<h2 data-id="quarto-animate-title">Deux grandes familles de couches</h2>
+<h3 id="les-rasters">Les Rasters</h3>
+<div class="fragment fade-in-then-out absolute" data-fragment-index="1" style="top: 10%; left: 60%; ">
+<p><img data-src="Images/bathy_tagus.png" height="1100"></p>
+</div>
+<div class="fragment fade-in-then-out" data-fragment-index="1" style="position: absolute; left: 1200px; top: 1220px; height:110px; width: 2000px; padding: 20px">
+<p>Bathymétrie de l’estuaire du Tage, Portugal</p>
+</div>
+<div class="fragment fade-in-then-out absolute" data-fragment-index="2" style="top: 25%; left: 45%; ">
+<p><img data-src="Images/NDVImap.png" height="700"></p>
+</div>
+<div class="fragment fade-in-then-out" data-fragment-index="2" style="position: absolute; left: 1000px; top: 1220px; height:110px; width: 2000px; padding: 20px">
+<p>NDVI mondiale (Normalised Difference Vegetation Index)</p>
+</div>
+<div class="fragment fade-in-then-out absolute" data-fragment-index="3" style="top: 8%; left: 50%; ">
+<p><img data-src="Images/fac/map9.png" height="1100"></p>
+</div>
+<div class="fragment fade-in-then-out" data-fragment-index="3" style="position: absolute; left: 1400px; top: 1220px; height:110px; width: 2000px; padding: 20px">
+<p>Bande radiométrique</p>
+</div>
+<div class="fragment fade-in" data-fragment-index="1" style="position: absolute; left: 150px; top: 300px; height:110px; width: 800px; padding: 20px">
+<ul>
+<li>Raster à bandes simple</li>
+</ul>
+</div>
+<div class="fragment fade-in" data-fragment-index="4" style="position: absolute; left: 150px; top: 400px; height:110px; width: 800px; padding: 20px">
+<ul>
+<li>Raster à bandes multiples</li>
+</ul>
+</div>
+<div class="fragment fade-in absolute" data-fragment-index="3" style="top: 40%; left: 7%; ">
+<p><img data-src="Images/pixel_matrix.png" height="500"></p>
+</div>
+<div class="fragment fade-in-then-out absolute" data-fragment-index="4" data-id="map_qgis1" style="top: 10%; left: 50%; ">
+<p><img data-src="Images/color-composition.png" height="1100"></p>
+</div>
+<div class="fragment fade-in absolute" data-fragment-index="4" data-id="map_qgis1" style="top: 47%; left: 40%; ">
+<p><img data-src="Images/screen_pixels.png" height="200"></p>
+</div>
+<div class="fragment fade-in absolute" data-fragment-index="5" data-id="map_qgis1" style="top: 10%; left: 49.5%; ">
+<p><img data-src="Images/color-composition2.png" height="1100"></p>
+</div>
+<div class="fragment fade-in grayscale" data-fragment-index="3" style="position: absolute; left: 300px; top: 1200px; height:30px; width:  500px; padding: 20px;text-align: center">
+
+</div>
+<div class="fragment fade-in" data-fragment-index="3" style="position: absolute; left: 240px; top: 1200px; height:110px; width: 800px; padding: 20px">
+<p>0</p>
+</div>
+<div class="fragment fade-in" data-fragment-index="3" style="position: absolute; left: 840px; top: 1200px; height:110px; width: 800px; padding: 20px">
+<p>1</p>
+</div>
+<div class="fragment fade-in bluescale" data-fragment-index="4" style="position: absolute; left: 300px; top: 1170px; height:30px; width:  500px; padding: 20px;text-align: center">
+
+</div>
+<div class="fragment fade-in greenscale" data-fragment-index="4" style="position: absolute; left: 300px; top: 1200px; height:30px; width:  500px; padding: 20px;text-align: center">
+
+</div>
+<div class="fragment fade-in redscale" data-fragment-index="4" style="position: absolute; left: 300px; top: 1230px; height:30px; width:  500px; padding: 20px;text-align: center">
+
+</div>
+</section>
+<section id="rendez-vous-en-tp-et-sur-le-terrain" class="slide level2" data-auto-animate="true" data-auto-animate-unmatched="true" style="font-size: 60px;">
+<h2 data-id="quarto-animate-title">Rendez-vous en TP et sur le terrain !</h2>
+<div class="absolute" style="left: 22%; bottom: 5%; ">
+<p><img data-src="Images/Drone.png" height="1100"></p>
+</div>
+
+</section>
+    </div>
+  <div class="quarto-auto-generated-content" style="display: none;">
+<p><img src="Images/logo2.png" class="slide-logo"></p>
+<div class="footer footer-default">
+<p>Introduction aux SIG, Simon Oiry (simon.oiry@univ-nantes.fr)</p>
+</div>
+</div></div>
+
+  <script>window.backupDefine = window.define; window.define = undefined;</script>
+  <script src="CM2023_files/libs/revealjs/dist/reveal.js"></script>
+  <!-- reveal.js plugins -->
+  <script src="CM2023_files/libs/revealjs/plugin/quarto-line-highlight/line-highlight.js"></script>
+  <script src="CM2023_files/libs/revealjs/plugin/pdf-export/pdfexport.js"></script>
+  <script src="CM2023_files/libs/revealjs/plugin/reveal-menu/menu.js"></script>
+  <script src="CM2023_files/libs/revealjs/plugin/reveal-menu/quarto-menu.js"></script>
+  <script src="CM2023_files/libs/revealjs/plugin/quarto-support/support.js"></script>
+  
+
+  <script src="CM2023_files/libs/revealjs/plugin/notes/notes.js"></script>
+  <script src="CM2023_files/libs/revealjs/plugin/search/search.js"></script>
+  <script src="CM2023_files/libs/revealjs/plugin/zoom/zoom.js"></script>
+  <script src="CM2023_files/libs/revealjs/plugin/math/math.js"></script>
+  <script>window.define = window.backupDefine; window.backupDefine = undefined;</script>
+
+  <script>
+
+      // Full list of configuration options available at:
+      // https://revealjs.com/config/
+      Reveal.initialize({
+'controlsAuto': true,
+'previewLinksAuto': false,
+'pdfSeparateFragments': false,
+'autoAnimateEasing': "ease",
+'autoAnimateDuration': 1,
+'autoAnimateUnmatched': true,
+'jumpToSlide': true,
+'menu': {"side":"left","useTextContentForMissingTitles":true,"markers":false,"loadIcons":false,"custom":[{"title":"Tools","icon":"<i class=\"fas fa-gear\"></i>","content":"<ul class=\"slide-menu-items\">\n<li class=\"slide-tool-item active\" data-item=\"0\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.fullscreen(event)\"><kbd>f</kbd> Fullscreen</a></li>\n<li class=\"slide-tool-item\" data-item=\"1\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.speakerMode(event)\"><kbd>s</kbd> Speaker View</a></li>\n<li class=\"slide-tool-item\" data-item=\"2\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.overview(event)\"><kbd>o</kbd> Slide Overview</a></li>\n<li class=\"slide-tool-item\" data-item=\"3\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.togglePdfExport(event)\"><kbd>e</kbd> PDF Export Mode</a></li>\n<li class=\"slide-tool-item\" data-item=\"4\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.toggleScrollView(event)\"><kbd>r</kbd> Scroll View Mode</a></li>\n<li class=\"slide-tool-item\" data-item=\"5\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.keyboardHelp(event)\"><kbd>?</kbd> Keyboard Help</a></li>\n</ul>"}],"openButton":true},
+'smaller': false,
+ 
+        // Display controls in the bottom right corner
+        controls: false,
+
+        // Help the user learn the controls by providing hints, for example by
+        // bouncing the down arrow when they first encounter a vertical slide
+        controlsTutorial: false,
+
+        // Determines where controls appear, "edges" or "bottom-right"
+        controlsLayout: 'edges',
+
+        // Visibility rule for backwards navigation arrows; "faded", "hidden"
+        // or "visible"
+        controlsBackArrows: 'faded',
+
+        // Display a presentation progress bar
+        progress: true,
+
+        // Display the page number of the current slide
+        slideNumber: false,
+
+        // 'all', 'print', or 'speaker'
+        showSlideNumber: 'all',
+
+        // Add the current slide number to the URL hash so that reloading the
+        // page/copying the URL will return you to the same slide
+        hash: true,
+
+        // Start with 1 for the hash rather than 0
+        hashOneBasedIndex: false,
+
+        // Flags if we should monitor the hash and change slides accordingly
+        respondToHashChanges: true,
+
+        // Push each slide change to the browser history
+        history: true,
+
+        // Enable keyboard shortcuts for navigation
+        keyboard: true,
+
+        // Enable the slide overview mode
+        overview: true,
+
+        // Disables the default reveal.js slide layout (scaling and centering)
+        // so that you can use custom CSS layout
+        disableLayout: false,
+
+        // Vertical centering of slides
+        center: false,
+
+        // Enables touch navigation on devices with touch input
+        touch: true,
+
+        // Loop the presentation
+        loop: false,
+
+        // Change the presentation direction to be RTL
+        rtl: false,
+
+        // see https://revealjs.com/vertical-slides/#navigation-mode
+        navigationMode: 'linear',
+
+        // Randomizes the order of slides each time the presentation loads
+        shuffle: false,
+
+        // Turns fragments on and off globally
+        fragments: true,
+
+        // Flags whether to include the current fragment in the URL,
+        // so that reloading brings you to the same fragment position
+        fragmentInURL: false,
+
+        // Flags if the presentation is running in an embedded mode,
+        // i.e. contained within a limited portion of the screen
+        embedded: false,
+
+        // Flags if we should show a help overlay when the questionmark
+        // key is pressed
+        help: true,
+
+        // Flags if it should be possible to pause the presentation (blackout)
+        pause: true,
+
+        // Flags if speaker notes should be visible to all viewers
+        showNotes: false,
+
+        // Global override for autoplaying embedded media (null/true/false)
+        autoPlayMedia: null,
+
+        // Global override for preloading lazy-loaded iframes (null/true/false)
+        preloadIframes: null,
+
+        // Number of milliseconds between automatically proceeding to the
+        // next slide, disabled when set to 0, this value can be overwritten
+        // by using a data-autoslide attribute on your slides
+        autoSlide: 0,
+
+        // Stop auto-sliding after user input
+        autoSlideStoppable: true,
+
+        // Use this method for navigation when auto-sliding
+        autoSlideMethod: null,
+
+        // Specify the average time in seconds that you think you will spend
+        // presenting each slide. This is used to show a pacing timer in the
+        // speaker view
+        defaultTiming: null,
+
+        // Enable slide navigation via mouse wheel
+        mouseWheel: false,
+
+        // The display mode that will be used to show slides
+        display: 'block',
+
+        // Hide cursor if inactive
+        hideInactiveCursor: true,
+
+        // Time before the cursor is hidden (in ms)
+        hideCursorTime: 5000,
+
+        // Opens links in an iframe preview overlay
+        previewLinks: false,
+
+        // Transition style (none/fade/slide/convex/concave/zoom)
+        transition: 'fade',
+
+        // Transition speed (default/fast/slow)
+        transitionSpeed: 'default',
+
+        // Transition style for full page slide backgrounds
+        // (none/fade/slide/convex/concave/zoom)
+        backgroundTransition: 'none',
+
+        // Number of slides away from the current that are visible
+        viewDistance: 3,
+
+        // Number of slides away from the current that are visible on mobile
+        // devices. It is advisable to set this to a lower number than
+        // viewDistance in order to save resources.
+        mobileViewDistance: 2,
+
+        // The "normal" size of the presentation, aspect ratio will be preserved
+        // when the presentation is scaled to fit different resolutions. Can be
+        // specified using percentage units.
+        width: 2400,
+
+        height: 1350,
+
+        // Factor of the display size that should remain empty around the content
+        margin: 0.1,
+
+        math: {
+          mathjax: 'https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.9/MathJax.js',
+          config: 'TeX-AMS_HTML-full',
+          tex2jax: {
+            inlineMath: [['\\(','\\)']],
+            displayMath: [['\\[','\\]']],
+            balanceBraces: true,
+            processEscapes: false,
+            processRefs: true,
+            processEnvironments: true,
+            preview: 'TeX',
+            skipTags: ['script','noscript','style','textarea','pre','code'],
+            ignoreClass: 'tex2jax_ignore',
+            processClass: 'tex2jax_process'
+          },
+        },
+
+        // reveal.js plugins
+        plugins: [QuartoLineHighlight, PdfExport, RevealMenu, QuartoSupport,
+
+          RevealMath,
+          RevealNotes,
+          RevealSearch,
+          RevealZoom
+        ]
+      });
+    </script>
+    <script id="quarto-html-after-body" type="application/javascript">
+      window.document.addEventListener("DOMContentLoaded", function (event) {
+        const tabsets =  window.document.querySelectorAll(".panel-tabset-tabby")
+        tabsets.forEach(function(tabset) {
+          const tabby = new Tabby('#' + tabset.id);
+        });
+        const isCodeAnnotation = (el) => {
+          for (const clz of el.classList) {
+            if (clz.startsWith('code-annotation-')) {                     
+              return true;
+            }
+          }
+          return false;
+        }
+        const onCopySuccess = function(e) {
+          // button target
+          const button = e.trigger;
+          // don't keep focus
+          button.blur();
+          // flash "checked"
+          button.classList.add('code-copy-button-checked');
+          var currentTitle = button.getAttribute("title");
+          button.setAttribute("title", "Copied!");
+          let tooltip;
+          if (window.bootstrap) {
+            button.setAttribute("data-bs-toggle", "tooltip");
+            button.setAttribute("data-bs-placement", "left");
+            button.setAttribute("data-bs-title", "Copied!");
+            tooltip = new bootstrap.Tooltip(button, 
+              { trigger: "manual", 
+                customClass: "code-copy-button-tooltip",
+                offset: [0, -8]});
+            tooltip.show();    
+          }
+          setTimeout(function() {
+            if (tooltip) {
+              tooltip.hide();
+              button.removeAttribute("data-bs-title");
+              button.removeAttribute("data-bs-toggle");
+              button.removeAttribute("data-bs-placement");
+            }
+            button.setAttribute("title", currentTitle);
+            button.classList.remove('code-copy-button-checked');
+          }, 1000);
+          // clear code selection
+          e.clearSelection();
+        }
+        const getTextToCopy = function(trigger) {
+            const codeEl = trigger.previousElementSibling.cloneNode(true);
+            for (const childEl of codeEl.children) {
+              if (isCodeAnnotation(childEl)) {
+                childEl.remove();
+              }
+            }
+            return codeEl.innerText;
+        }
+        const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+          text: getTextToCopy
+        });
+        clipboard.on('success', onCopySuccess);
+        if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+          const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+            text: getTextToCopy,
+            container: window.document.getElementById('quarto-embedded-source-code-modal')
+          });
+          clipboardModal.on('success', onCopySuccess);
+        }
+          var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+          var mailtoRegex = new RegExp(/^mailto:/);
+            var filterRegex = new RegExp('/' + window.location.host + '/');
+          var isInternal = (href) => {
+              return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+          }
+          // Inspect non-navigation links and adorn them if external
+         var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+          for (var i=0; i<links.length; i++) {
+            const link = links[i];
+            if (!isInternal(link.href)) {
+              // undo the damage that might have been done by quarto-nav.js in the case of
+              // links that we want to consider external
+              if (link.dataset.originalHref !== undefined) {
+                link.href = link.dataset.originalHref;
+              }
+            }
+          }
+        function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+          const config = {
+            allowHTML: true,
+            maxWidth: 500,
+            delay: 100,
+            arrow: false,
+            appendTo: function(el) {
+                return el.closest('section.slide') || el.parentElement;
+            },
+            interactive: true,
+            interactiveBorder: 10,
+            theme: 'light-border',
+            placement: 'bottom-start',
+          };
+          if (contentFn) {
+            config.content = contentFn;
+          }
+          if (onTriggerFn) {
+            config.onTrigger = onTriggerFn;
+          }
+          if (onUntriggerFn) {
+            config.onUntrigger = onUntriggerFn;
+          }
+            config['offset'] = [0,0];
+            config['maxWidth'] = 700;
+          window.tippy(el, config); 
+        }
+        const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+        for (var i=0; i<noterefs.length; i++) {
+          const ref = noterefs[i];
+          tippyHover(ref, function() {
+            // use id or data attribute instead here
+            let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+            try { href = new URL(href).hash; } catch {}
+            const id = href.replace(/^#\/?/, "");
+            const note = window.document.getElementById(id);
+            if (note) {
+              return note.innerHTML;
+            } else {
+              return "";
+            }
+          });
+        }
+        const findCites = (el) => {
+          const parentEl = el.parentElement;
+          if (parentEl) {
+            const cites = parentEl.dataset.cites;
+            if (cites) {
+              return {
+                el,
+                cites: cites.split(' ')
+              };
+            } else {
+              return findCites(el.parentElement)
+            }
+          } else {
+            return undefined;
+          }
+        };
+        var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+        for (var i=0; i<bibliorefs.length; i++) {
+          const ref = bibliorefs[i];
+          const citeInfo = findCites(ref);
+          if (citeInfo) {
+            tippyHover(citeInfo.el, function() {
+              var popup = window.document.createElement('div');
+              citeInfo.cites.forEach(function(cite) {
+                var citeDiv = window.document.createElement('div');
+                citeDiv.classList.add('hanging-indent');
+                citeDiv.classList.add('csl-entry');
+                var biblioDiv = window.document.getElementById('ref-' + cite);
+                if (biblioDiv) {
+                  citeDiv.innerHTML = biblioDiv.innerHTML;
+                }
+                popup.appendChild(citeDiv);
+              });
+              return popup.innerHTML;
+            });
+          }
+        }
+      });
+      </script>
+    
+
+</body></html>

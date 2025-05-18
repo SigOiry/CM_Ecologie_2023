@@ -1,0 +1,572 @@
+---
+format: 
+    revealjs:
+        slide-number: false
+        transition: fade
+        theme: [default, style.scss]
+        footer: "Introduction aux SIG, Simon Oiry (simon.oiry@univ-nantes.fr)"
+        logo: Images/logo2.png
+        width: 2400
+        height: 1350
+        auto-animate: true
+---
+
+## 
+
+::: {.gradient_box style="position: absolute; left: -500px; top: 50px; height:110px; width:  3400px; padding: 20px;text-align: center"}
+[Stage d'écologie quantitative]{style="font-size: 90px; font-weight: bold; line-height: 1em; margin: 0px; text-align: justify-all;"}
+:::
+
+::: {.gradient_box style="position: absolute; left: 450px; top: 250px; height:110px; width: 1500px; padding: 20px;text-align: center"}
+[Introduction aux SIG]{style="font-size: 60px; font-weight: bold; line-height: 1em; margin: 0px; text-align: justify-all;"}
+:::
+
+::: {.absolute bottom="40%" left="10.4%"}
+![](Images/qgis-logo.png){height="200"}
+:::
+
+::: {.absolute bottom="40%" right="10.4%"}
+![](Images/ArcGIS_logo.png){height="200"}
+:::
+
+::: {.absolute bottom="4%" right="15%"}
+![](Images/Drone_title.jpg){height="400"}
+:::
+
+::: {.gradient_box style="position: absolute; left: 825px; top: 440px; height: 145px; width: 750px; padding: 0px; padding-left: 10px;text-align: center"}
+[Simon Oiry]{style="font-size: 45px; font-weight: bold;"}
+
+[Doctorant]{style="font-size: 40px; font-weight: bold;"}
+:::
+
+::: {.gradient_box style="position: absolute; left: 700px; top: 675px; height: 70px; width: 1000px; padding: 0px; padding-left: 10px;text-align: center"}
+[Email : simon.oiry\@univ-nantes.fr]{style="font-size: 35px; font-weight: bold;"}
+:::
+
+::: {.absolute bottom="4%" left="25%"}
+![](Images/Sentinel2.png){height="400"}
+:::
+
+## Les SIG, qu'est ce que cela veut dire ? {style="font-size: 60px;"} 
+
+. . .
+
+::: {.absolute left="10.4%"}
+SIG = Systèmes d'information géographique
+:::
+
+. . .
+
+::: {.absolute left="50%" top="50%"}
+[**SIG**]{style="font-size: 80px;"}
+:::
+::: {.absolute top="16%" left="47%"}
+![](Images/computer.png){height="200"}
+:::
+::: {.absolute left="46%" top="31%"}
+Le Hardware
+:::
+
+. . .
+
+::: {.absolute top="37%" left="78%"}
+![](Images/data.png){height="200"}
+:::
+::: {.absolute left="76%" top="52%"}
+Les données
+:::
+
+. . .
+
+::: {.absolute top="70%" left="63%"}
+![](Images/personnes.png){height="200"}
+:::
+::: {.absolute left="61%" top="85%"}
+Les personnes
+:::
+
+. . .
+
+::: {.absolute top="70%" left="33%"}
+![](Images/internet.png){height="200"}
+:::
+::: {.absolute left="33%" top="85%"}
+Internet
+:::
+
+. . .
+
+::: {.absolute .fragment .fade-out top="37%" left="20%"}
+![](Images/soft.png){height="170"}
+:::
+::: {.absolute .fragment .fade-in-then-out top="37%" left="21%"}
+![](Images/arcgis.png){height="150"}
+:::
+::: {.absolute .fragment .fade-in top="37%" left="13%"}
+![](Images/qgis.png){height="150"}
+:::
+::: {.absolute  left="18%" top="52%"}
+Les logiciels
+:::
+
+## Les SIG, à quoi ça sert ? {style="font-size: 60px;"}
+
+::: {.fragment .fade-in fragment-index=1 .absolute bottom="0%" left="20%"}
+![](Images/carte1.png){height="1200"}
+:::
+
+::: {.fragment .fade-in fragment-index=1 style="position: absolute; left: -50px; top: 600px; height:110px; width:  500px; padding: 20px;text-align: center"}
+[Faire des cartes]{style="font-size: 90px; line-height: 1em; margin: 0px; text-align: justify-all;"}
+:::
+
+::: {.redbox .absolute .fragment .fade-in-then-out fragment-index=2 top="15%" left="39.5%" width="95" height="48"}
+:::
+::: {.redbox .absolute .fragment .fade-in-then-out fragment-index=2 top="15%" right="27.5%" width="95" height="48"}
+:::
+::: {.redbox .absolute .fragment .fade-in-then-out fragment-index=2 top="78.5%" right="17%" width="110" height="50"}
+:::
+::: {.redbox .absolute .fragment .fade-in-then-out fragment-index=3 top="71%" left="48.5%" width="250" height="330"}
+:::
+::: {.redbox .absolute .fragment .fade-in-then-out fragment-index=4 top="90%" left="59.5%" width="220" height="75"}
+:::
+
+::: {.fragment .fade-in fragment-index=5 style="position: absolute; left: 1830px; top: 600px; height:110px; width:  500px; padding: 20px;text-align: center"}
+[Traiter des données carto]{style="font-size: 90px; line-height: 1em; margin: 0px; text-align: justify-all;"}
+:::
+
+## Types de logiciels SIG (propiétaire vs open sources) {style="font-size: 60px;"}
+
+::: {style="position: absolute; left: 250px; top: 100px; height:110px; width:  500px; padding: 20px;text-align: center"}
+[Propriétaire]{style="font-size: 90px; line-height: 1em; margin: 0px; text-align: justify-all;"}
+:::
+::: {style="position: absolute; right: 380px; top: 100px; height:110px; width:  500px; padding: 20px;text-align: center"}
+[Open Source]{style="font-size: 90px; line-height: 1em; margin: 0px; text-align: justify-all;"}
+:::
+
+::: {.absolute top="15%" left="0%"}
+![](Images/arcgis.png){height="250"}
+:::
+::: {style="position: absolute; left: 350px; top: 300px; height:110px; width:  500px; padding: 20px;text-align: center"}
+[arcGIS (ESRI)]{style="font-size: 70px; line-height: 1em; margin: 0px; text-align: justify-all;"}
+:::
+
+::: {.absolute top="45%" left="-3%"}
+![](Images/mapinfo.png){height="100"}
+:::
+::: {style="position: absolute; left: 320px; top: 600px; height:110px; width:  900px; padding: 20px;text-align: center"}
+[MapInfo (Pitney Bowes)]{style="font-size: 70px; line-height: 1em; margin: 0px; text-align: justify-all;"}
+:::
+
+::: {.absolute top="65%" left="0%"}
+![](Images/IDRISI.jpeg){height="100"}
+:::
+::: {style="position: absolute; left: 350px; top: 900px; height:110px; width:  700px; padding: 20px;text-align: center"}
+[IDRISI (Clark Labs)]{style="font-size: 70px; line-height: 1em; margin: 0px; text-align: justify-all;"}
+:::
+
+::: {.absolute top="22%" left="52%"}
+![](Images/qgis.png){height="100"}
+:::
+::: {style="position: absolute; left: 1650px; top: 300px; height:110px; width:  700px; padding: 20px;text-align: center"}
+[Qgis  (www.qgis.org)]{style="font-size: 70px; line-height: 1em; margin: 0px; text-align: justify-all;"}
+:::
+
+::: {.absolute top="40%" left="52%"}
+![](Images/SAGA.png){height="250"}
+:::
+::: {style="position: absolute; left: 1550px; top: 900px; height:110px; width:  800px; padding: 20px;text-align: center"}
+[Grass  (grass.osgeo.org)]{style="font-size: 70px; line-height: 1em; margin: 0px; text-align: justify-all;"}
+:::
+
+::: {.absolute top="65%" left="54%"}
+![](Images/grass.png){height="250"}
+:::
+::: {style="position: absolute; left: 1550px; top: 600px; height:110px; width:  800px; padding: 20px;text-align: center"}
+[Saga  (www.saga-gis.org)]{style="font-size: 70px; line-height: 1em; margin: 0px; text-align: justify-all;"}
+:::
+
+
+::: {.fragment .fade-in fragment-index=1 style="position: absolute; left: 200px; top: 1200px; height:110px; width:  2000px; padding: 20px;text-align: center"}
+[Et plein d'autes... (eCognition, SNAP, ENVI...)]{style="font-size: 70px; line-height: 1em; margin: 0px; text-align: justify-all;"}
+:::
+
+::: {.absolute top="5%" left="48%"}
+![](Images/line.png){height="1100"}
+:::
+
+## Qu'est ce que Qgis ? {auto-animate=true auto-animate-unmatched=true style="font-size: 60px;"}
+::: {.absolute top="15%" left="0%"}
+![](Images/qgis.png){height="200"}
+:::
+
+::: {style="position: absolute; left: 800px; top: 200px; height:110px; width:  1800px; padding: 20px"}
+QGIS est un Système d'Information Géographique **(SIG)**
+:::
+
+::: {style="position: absolute; left: 800px; top: 350px; height:110px; width:  1800px; padding: 20px"}
+C'est un projet de **l'Open Source Geospatial Foundation** (OSGeo)
+:::
+
+::: {style="position: absolute; left: 800px; top: 500px; height:110px; width:  1800px; padding: 20px"}
+La dernière version [stable]{.fragment .highlight-red} est Qgis 3.40.6 (Bratislava)
+:::
+
+::: {.fragment .fade-in style="position: absolute; left: 1544px; top: 580px; height:110px; width:  1800px; padding: 20px"}
+Qgis 3.42.2 (Münster, 18 avril 2025)
+:::
+
+. . . 
+
+::: {style="font-size: 70px; position: absolute; top: 600px; height:110px; width:  1800px; padding: 20px"}
+**Pourquoi Qgis ?** 
+:::
+
+::: {style="position: absolute; top: 700px; left: 100px; width:  1800px; margin: 0px;"}
+::: {.incremental}
+- Gratuit !
+- Supporte de nombreux formats de vecteurs, rasters et de bases de données.
+- Disponible pour Windows, MacOS, Linux, Android.
+- Vaste communauté d'utilisateurs.
+- Grande capacité d'extension.
+:::
+:::
+
+::: {style="position: absolute; top: 700px; color: red; left: 100px; width:  1800px; margin: 0px;"}
+::: {.incremental}
+- Gratuit !
+:::
+:::
+
+. . . 
+
+::: {.absolute top="75%" left="80%" data-id="PYTHON"}
+![](Images/Python.png)
+:::
+
+## Améliorer QGIS avec des modules et Python {auto-animate=true style="font-size: 60px;"}
+::: {.absolute top="15%" left="0%" data-id="PYTHON"}
+![](Images/Python.png){height="300px"}
+:::
+
+. . . 
+ 
+::: {style="position: absolute; left: 700px; top: 200px; height:110px; width:  1800px; padding: 20px"}
+Qgis est déjà très complet de base, mais l'est encore plus grâce à la communauté
+:::
+
+::: {.absolute top="30%" left="50%"}
+![](Images/plugins.png){height="700"}
+:::
+
+::: {style="position: absolute; left: 1200px; top: 1100px; height:110px; width:  1800px; padding: 20px"}
+ - Mai 2025 : 2446 plugins disponibles 
+:::
+
+. . . 
+
+::: {style="position: absolute; left: 0px; top: 600px; height:110px; width:  1000px; padding: 20px"}
+**De nouvelles fonctionnalités** peuvent être développées par
+l'usager en utilisant le langage python (http://plugins.qgis.org/plugins/).
+:::
+
+## Télécharger Qgis ! {auto-animate=true style="font-size: 60px;"}
+::: {.absolute bottom="0%" right="0%"}
+![](Images/qgis-dl.png){height="1200"}
+:::
+
+::: {.absolute bottom="10%" left="0%"}
+![](Images/qr-code.png){height="800"}
+:::
+
+. . . 
+
+<!-- ::: {style="position: absolute; left: 300px; top: 1200px; height:110px; width:  600px; padding: 20px"} -->
+<!-- Tp écologie : avril-mai  -->
+<!-- ::: -->
+<!-- ::: {style="position: absolute; left: 1400px; top: 1200px; height:110px; width:  800px; padding: 20px"} -->
+<!-- Sortie de terrain: mi-mai -->
+<!-- ::: -->
+
+## Que peut-on mettre dans un SIG ? {auto-animate=true style="font-size: 60px;"}
+
+
+::: {.fragment .fade-in fragment-index=1 style="position: absolute; left: 700px; top: 100px; height:110px; width:  1000px; padding: 20px"}
+Tout ce qui a une position dans l'espace
+:::
+
+::: {.absolute .fragment .fade-in-then-out fragment-index=1 top="20%" left="30%"}
+![](Images/fac/map1.png){height="1000"}
+:::
+
+::: {.absolute .fragment .fade-in-then-out fragment-index=2 top="20%" left="30%"}
+![](Images/fac/map2.png){height="1000"}
+:::
+
+::: {.fragment .fade-in-then-out fragment-index=2 style="position: absolute; left: 0px; top: 500px; height:110px; width:  1000px; padding: 20px"}
+- Position des **arbres**
+:::
+
+::: {.absolute .fragment .fade-in-then-out fragment-index=3 top="20%" left="30%"}
+![](Images/fac/map3.png){height="1000"}
+:::
+
+::: {.fragment .fade-in-then-out fragment-index=3 style="position: absolute; left: 0px; top: 500px; height:110px; width:  1000px; padding: 20px"}
+- Position des [**arbres**]{style="color: green;"}
+- Position des **batiments**
+:::
+
+::: {.absolute .fragment .fade-in-then-out fragment-index=4 top="20%" left="30%"}
+![](Images/fac/map4.png){height="1000"}
+:::
+
+::: {.fragment .fade-in-then-out fragment-index=4 style="position: absolute; left: 0px; top: 500px; height:110px; width:  1000px; padding: 20px"}
+- Position des [**arbres**]{style="color: green;"}
+- Position des [**batiments**]{style="color: red;"}
+- Tracé des **routes**
+:::
+
+::: {.absolute .fragment .fade-in-then-out fragment-index=5 top="20%" left="30%"}
+![](Images/fac/map5.png){height="1000"}
+:::
+
+::: {.fragment .fade-in-then-out fragment-index=5 style="position: absolute; left: 0px; top: 500px; height:110px; width:  1000px; padding: 20px"}
+- Position des [**arbres**]{style="color: green;"}
+- Position des [**batiments**]{style="color: red;"}
+- Tracé des [**routes**]{style="color: #004b8b;"}
+- Plan d'[**eau**]{style="color: blue;"}
+:::
+
+## Les couches SIG {auto-animate=true style="font-size: 60px;"}
+::: {style="position: absolute; left: 0px; top: 200px; height:110px; width: 2400px; padding: 20px"}
+Toutes [les routes]{style="color: red;"} sont regroupées dans la même couche, tout les [batiments]{style="color: black;"} dans une autre, les [plans d'eau]{style="color: #52AFF9;"} dans une autre, ect...
+:::
+::: {.absolute top="30%" left="17%"}
+![](Images/couches.png){height="400"}
+:::
+
+. . .
+
+::: {.absolute top="65%" left="41.25%"}
+![](Images/map_couche.png){height="400"}
+:::
+
+::: {style="position: absolute; left: 50px; top: 950px; height:110px; width: 800px; padding: 20px"}
+La superposition de plusieurs **couches** forme une **carte**.
+:::
+
+## Les couches SIG {auto-animate=true auto-animate-unmatched=true style="font-size: 60px;"}
+::: {.absolute top="10%" left="10%" data-id="map_qgis"}
+![](Images/fac/map5.png){height="1100"}
+:::
+::: {.absolute top="35%" left="60%"}
+![](Images/qgis_printscreen.png){height="400"}
+:::
+
+## Deux grandes familles de couches {auto-animate=true auto-animate-unmatched=true style="font-size: 60px;"}
+### Les vecteurs
+
+::: {.fragment .fade-out fragment-index=4 .absolute top="10%" left="50%" data-id="map_qgis"}
+![](Images/fac/map6.png){height="1100"}
+:::
+
+::: {.fragment .fade-in-then-out fragment-index=1 style="position: absolute; left: 150px; top: 300px; height:110px; width: 800px; padding: 20px"}
+- Des [points]{style="color: green"}
+:::
+::: {.fragment .fade-in-then-out fragment-index=2 style="position: absolute; left: 150px; top: 300px; height:110px; width: 800px; padding: 20px"}
+- Des [points]{style="color: green"}
+- Des [polygons]{style="color: red"}
+:::
+::: {.fragment .fade-in-then-out fragment-index=3 style="position: absolute; left: 150px; top: 300px; height:110px; width: 800px; padding: 20px"}
+- Des [points]{style="color: green"}
+- Des [polygons]{style="color: red"}
+- Des [lignes]{style="color: #004b8b"}
+:::
+
+::: {.fragment .fade-in fragment-index=4 .absolute top="10%" left="50%" data-id="map_qgis1"}
+![](Images/fac/map7.png){height="1100"}
+:::
+
+::: {.fragment .fade-in fragment-index=4 .absolute top="22%" left="7%" data-id="map_qgis"}
+![](Images/printscreen_attribut.png){height="600"}
+:::
+::: {.fragment .fade-in fragment-index=4 style="position: absolute; left: 300px; top: 200px; height:110px; width: 800px; padding: 20px"}
+La table attributaire
+:::
+
+
+
+:::: {.columns .fragment .fade-in fragment-index=4 style="position: absolute; left: 50px; top: 900px; height:110px; width: 1400px; padding: 20px"}
+
+::: {.column width="40%" .incremental}
+- Texte
+- Dates
+- Valeurs numériques
+:::
+
+::: {.column width="60%" .incremental}
+- Liens hypertextes
+- ...
+:::
+
+::::
+
+
+## Deux grandes familles de couches {auto-animate=true auto-animate-unmatched=true style="font-size: 60px;"}
+### Les Vecteurs
+
+::: {.fragment .fade-out fragment-index=1 .absolute top="10%" left="50%"}
+![](Images/fac/map8.png){height="1100"}
+:::
+
+::: {.fragment .fade-out fragment-index=1 .absolute top="35%" left="20%"}
+![](Images/legend_tree.png){height="300"}
+:::
+
+::: {.fragment .fade-in fragment-index=1 style="position: absolute; left: 20px; top: 200px; height:110px; width: 2200px; padding: 20px"}
+Résumé de certaines des actions les plus importantes qui peuvent être réalisées dans la table attributaire : 
+:::
+
+::: {.fragment .fade-in-then-out fragment-index=3 style="position: absolute; left: 150px; top: 350px; height:110px; width: 2000px; padding: 20px"}
+- **Stocker** des **informations** de différentes natures (nombres (entiers, décimaux), texte, dates) 
+:::
+::: {.fragment .fade-in fragment-index=4 style="position: absolute; left: 150px; top: 350px; height:110px; width: 2000px; padding: 20px"}
+- **Stocker** des **informations** de différentes natures (nombres (entiers, décimaux), texte, dates) 
+- **Cartographier** ces informations.
+:::
+::: {.fragment .fade-in fragment-index=5 style="position: absolute; left: 150px; top: 350px; height:110px; width: 2000px; padding: 20px"}
+- **Stocker** des **informations** de différentes natures (nombres (entiers, décimaux), texte, dates) 
+- **Cartographier** ces informations.
+- **Sélectionner** dans un champ les valeurs qui doivent être cartographier
+:::
+::: {.fragment .fade-in fragment-index=6 style="position: absolute; left: 150px; top: 350px; height:110px; width: 2000px; padding: 20px"}
+- **Stocker** des **informations** de différentes natures (nombres (entiers, décimaux), texte, dates) 
+- **Cartographier** ces informations.
+- **Sélectionner** dans un champ les valeurs qui doivent être cartographier
+- Placer sur une carte différentes **valeurs** d'un attribut en utilisant une **symbologie** différente (couleurs, symboles).
+:::
+::: {.fragment .fade-in fragment-index=7 style="position: absolute; left: 150px; top: 350px; height:110px; width: 2000px; padding: 20px"}
+- **Stocker** des **informations** de différentes natures (nombres (entiers, décimaux), texte, dates) 
+- **Cartographier** ces informations.
+- **Sélectionner** dans un champ les valeurs qui doivent être cartographier
+- Placer sur une carte différentes **valeurs** d'un attribut en utilisant une **symbologie** différente (couleurs, symboles).
+- **Réaliser des calculs** entre les différents attributs et crée une nouvelle information.
+:::
+
+::: {.fragment .fade-in fragment-index=8 style="position: absolute; left: 400px; top: 1100px; height:110px; width: 2000px; padding: 20px; color: red; font-size: 90px"}
+La table d'attributs des couches vecteurs
+:::
+
+## Deux grandes familles de couches {auto-animate=true auto-animate-unmatched=true style="font-size: 60px;"}
+### Les Vecteurs
+
+::: {.fragment .fade-in fragment-index=1 style="position: absolute; left: 20px; top: 200px; height:110px; width: 2400px; padding: 20px"}
+Le « *shapefile* » est un format de fichier développé par ESRI pour le logiciel ArcView (1990s) qui maintenant est utilisé par un grand nombre de logiciels (libres et propriétaires).
+:::
+
+::: {.fragment .fade-in fragment-index=2 style="position: absolute; left: 20px; top: 450px; height:110px; width: 2000px; padding: 20px"}
+Il est toujours composé d'au moins 3 fichiers:
+:::
+::: {.fragment .fade-in-then-out fragment-index=3 style="position: absolute; left: 150px; top: 550px; height:110px; width: 2000px; padding: 20px"}
+- **.shp** : géométrie des objets (points, lignes, polygons)
+:::
+::: {.fragment .fade-in-then-out fragment-index=4 style="position: absolute; left: 150px; top: 550px; height:110px; width: 2000px; padding: 20px"}
+- **.shp** : géométrie des objets (points, lignes, polygons)
+- **.shx** : l'index de la géométrie
+:::
+::: {.fragment .fade-in-then-out fragment-index=5 style="position: absolute; left: 150px; top: 550px; height:110px; width: 2000px; padding: 20px"}
+- **.shp** : géométrie des objets (points, lignes, polygons)
+- **.shx** : l'index de la géométrie
+- **.dbf** : La table d'attribut
+:::
+::: {.fragment .fade-in-then-out fragment-index=6 style="position: absolute; left: 150px; top: 550px; height:110px; width: 2000px; padding: 20px"}
+- **.shp** : géométrie des objets (points, lignes, polygons)
+- **.shx** : l'index de la géométrie
+- **.dbf** : La table d'attribut
+- ...
+:::
+::: {.fragment .fade-in fragment-index=6 .absolute top="60%" left="50%"}
+![](Images/ext_shp.png){height="300"}
+:::
+
+
+## Deux grandes familles de couches {auto-animate=true auto-animate-unmatched=true style="font-size: 60px;"}
+### Les Rasters
+
+::: {.fragment .fade-in-then-out fragment-index=1 .absolute top="10%" left="60%"}
+![](Images/bathy_tagus.png){height="1100"}
+:::
+::: {.fragment .fade-in-then-out fragment-index=1 style="position: absolute; left: 1200px; top: 1220px; height:110px; width: 2000px; padding: 20px"}
+Bathymétrie de l'estuaire du Tage, Portugal
+:::
+::: {.fragment .fade-in-then-out fragment-index=2 .absolute top="25%" left="45%"}
+![](Images/NDVImap.png){height="700"}
+:::
+::: {.fragment .fade-in-then-out fragment-index=2 style="position: absolute; left: 1000px; top: 1220px; height:110px; width: 2000px; padding: 20px"}
+NDVI mondiale (Normalised Difference Vegetation Index)
+:::
+
+::: {.fragment .fade-in-then-out fragment-index=3 .absolute top="8%" left="50%"}
+![](Images/fac/map9.png){height="1100"}
+:::
+
+::: {.fragment .fade-in-then-out fragment-index=3 style="position: absolute; left: 1400px; top: 1220px; height:110px; width: 2000px; padding: 20px"}
+Bande radiométrique
+:::
+
+::: {.fragment .fade-in fragment-index=1 style="position: absolute; left: 150px; top: 300px; height:110px; width: 800px; padding: 20px"}
+- Raster à bandes simple 
+:::
+::: {.fragment .fade-in fragment-index=4 style="position: absolute; left: 150px; top: 400px; height:110px; width: 800px; padding: 20px"}
+- Raster à bandes multiples
+:::
+
+::: {.fragment .fade-in fragment-index=3 .absolute top="40%" left="7%"}
+![](Images/pixel_matrix.png){height="500"}
+:::
+
+::: {.fragment .fade-in-then-out fragment-index=4 .absolute top="10%" left="50%" data-id="map_qgis1"}
+![](Images/color-composition.png){height="1100"}
+:::
+
+::: {.fragment .fade-in fragment-index=4 .absolute top="47%" left="40%" data-id="map_qgis1"}
+![](Images/screen_pixels.png){height="200"}
+:::
+
+::: {.fragment .fade-in fragment-index=5 .absolute top="10%" left="49.5%" data-id="map_qgis1"}
+![](Images/color-composition2.png){height="1100"}
+:::
+
+::: {.fragment .fade-in fragment-index=3 .grayscale style="position: absolute; left: 300px; top: 1200px; height:30px; width:  500px; padding: 20px;text-align: center"}
+:::
+
+::: {.fragment .fade-in fragment-index=3 style="position: absolute; left: 240px; top: 1200px; height:110px; width: 800px; padding: 20px"}
+0
+:::
+
+::: {.fragment .fade-in fragment-index=3 style="position: absolute; left: 840px; top: 1200px; height:110px; width: 800px; padding: 20px"}
+1
+:::
+
+::: {.fragment .fade-in fragment-index=4 .bluescale style="position: absolute; left: 300px; top: 1170px; height:30px; width:  500px; padding: 20px;text-align: center"}
+:::
+::: {.fragment .fade-in fragment-index=4 .greenscale style="position: absolute; left: 300px; top: 1200px; height:30px; width:  500px; padding: 20px;text-align: center"}
+:::
+::: {.fragment .fade-in fragment-index=4 .redscale style="position: absolute; left: 300px; top: 1230px; height:30px; width:  500px; padding: 20px;text-align: center"}
+:::
+
+
+
+## Rendez-vous en TP et sur le terrain ! {auto-animate=true auto-animate-unmatched=true style="font-size: 60px;"}
+
+::: {.absolute bottom="5%" left="22%"}
+![](Images/Drone.png){height="1100"}
+:::
+
+
+
+
+
+
+
+
+
